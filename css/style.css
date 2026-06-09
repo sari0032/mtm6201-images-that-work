@@ -144,22 +144,17 @@ a {
   }
 }
 
-
-/* ============================================================
-   HERO SECTION
-   
-   Currently using a CSS background image.
-   ============================================================ */
-.hero {
   position: relative;
   min-height: 90vh;
   display: flex;
   align-items: flex-end;
 
-  /* BROKEN: This should not be a background image */
-  background-image: url('../images/hero.png');
-  background-size: cover;
-  background-position: center;
+.hero img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height:100%;
+  object-fit: cover;
 }
 
 .hero::after {
@@ -396,11 +391,23 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+}
 
-  /* BROKEN: This should not be a background image */
-  background-image: url('../images/landscape-banner.png');
-  background-size: cover;
-  background-position: center;
+.landscape-banner picture img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.landscape-banner::before {
+  z-index: 1;
+}
+
+.landscape-banner__content {
+  position: relative;
+  z-index: 2;
 }
 
 .landscape-banner::before {
