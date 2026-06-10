@@ -143,11 +143,13 @@ a {
     display: none;
   }
 }
-
+.hero {
   position: relative;
   min-height: 90vh;
   display: flex;
   align-items: flex-end;
+  overflow: hidden;
+}
 
 .hero img {
   position: absolute;
