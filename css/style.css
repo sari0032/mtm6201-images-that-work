@@ -148,7 +148,7 @@ a {
   min-height: 90vh;
   display: flex;
   align-items: flex-end;
-  overflow: hidden;
+  isolation: isolate;
 }
 
 .hero img {
